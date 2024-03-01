@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+.botones{
+    width: 100%;
+    padding: 10px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #1f53c5;
+}
+
+.botonesTab{
+    padding: 10px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #1f53c5;
+}
+
+#botonVolver{
+    background-color: red;    
+}
+
+#botonVolver:active{
+    background-color:  rgb(249, 111, 111);
+    transform: translateY(1px);
+    color: white;
+}
+
+.botones:active{
+    background-color:  #5286f7;
+    transform: translateY(1px);
+    color: white;
+}
+
+.botonesTab:active{
+    background-color:  #5286f7;
+    transform: translateY(1px);
+    color: white;
+}

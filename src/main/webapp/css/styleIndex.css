@@ -1,0 +1,232 @@
+@charset "ISO-8859-1";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFEFEF;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+header{
+    width: 100%;
+    height: 140px;
+    padding: 0 20px 0 20px;
+    display: flex;
+}
+nav{
+    background-color: #0A3143;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    position: relative;
+    margin: auto;
+    
+}
+/*Dropdown nav
+
+
+*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: #0A3143;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul, /* this is the line we add */
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+/*ends dropdown nav */
+main{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+section{
+  padding: 1.25rem ;
+  position: relative;
+  z-index: 1;
+  margin-left: 20%;
+  margin-bottom: 60px;
+}
+#mision{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 700px;
+    line-height: 1.75;
+  }
+#imgcostado{
+  width: 20%;
+  position: absolute;
+  height: 1340px;
+}
+
+#grid-1{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    padding-left: 50px;
+    width: 550px;
+}
+#grid-2{
+    flex: 1;
+    display: flex;
+  }
+#cuadradito{
+  margin-top: auto;
+  height: 350px;
+}
+#jumbotron{
+    background-color: #c9c9c9;
+    padding: 20px;
+    width: 800px;
+    height: 460px;
+    margin: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Estilos para el encabezado */
+header h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+/* Estilos para la barra de navegaci�n */
+
+nav li {
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos para la secci�n de oferta educativa */
+section h2 {
+  color: #333;
+  font-size: 30px;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section li {
+  margin-bottom: 20px;
+}
+
+section h3 {
+  color: #666;
+  font-size: 18px;
+}
+
+section p {
+  color: #999;
+  font-size: 20px;
+  font-size: 1.1875rem!important;
+}
+
+/* Estilos para el pie de p�gina */
+footer {
+  background-color: #999;
+  padding: 20px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.75;
+}
+
+.footer-left {
+  width: 60%;
+}
+.footer-right {
+  width: 25%;
+}
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Media query para ajustar el dise�o en pantallas peque�as */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+  }
+}
+
+#cont{
+  max-width: 720px;
+}
